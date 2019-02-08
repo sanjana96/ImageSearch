@@ -1,8 +1,3 @@
-from ImageSearch import get_image_text_tesseract
-
-
-def is_text_present(path, text):
-    image_text = get_image_text_tesseract(path)
-    if text in image_text:
-        return True
-    return False
+def search_in_image_text(image_text, text):
+    # TODO: add word distance, everything related to text processing
+    return text in image_text
